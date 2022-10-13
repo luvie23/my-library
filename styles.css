@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin:  0;
+    background-color: brown;
+  }
+  
+  #header{
+    height: 20vh;
+    background-color: bisque;
+  }
+  
+  #wall{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 50px;
+  }
+  
+  #shelf{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    background-color: aqua;
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  .cards {
+    border:   1px solid red;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 250px;
+    height: 150px;
+    background-color: blanchedalmond;
+  }
+  
+  .card-button{
+    padding: 5px;
+    width:  50px;
+    height: 20px;
+  }
