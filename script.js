@@ -1,7 +1,5 @@
 let shelf = document.getElementById('shelf');
-
-
-
+let submission = document.get
 const shelves = document.querySelectorAll('.shelves')
 
 let myLibrary = [];
@@ -32,7 +30,6 @@ var book6 = new Book('el fili', 'rizal', 150, 'read');
 var book7 = new Book('el fili', 'rizal', 150, 'read');
 var book8 = new Book('el fili', 'rizal', 150, 'read');
 
-console.log(book1.info());
 
 addBookToLibrary(book1);
 addBookToLibrary(book2);
@@ -65,4 +62,6 @@ for (i = 0; i < myLibrary.length; i++) {
 
 let buttons = document.querySelectorAll('button')
 
-console.log(buttons)
+document.getElementById('submit').onclick = function(){
+    book1.title = document.getElementById('book-title')
+}

@@ -1,8 +1,12 @@
 body{
+
     padding: 0;
     margin:  0;
     background-color: #171717;
+    font-family: 'Roboto', sans-serif;
   }
+
+
 
 #header{
     height: 20vh;
@@ -27,12 +31,10 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     border-radius: 20px;
-    background-color: hsla(0, 0%, 100%, 0.993);
-    background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-    repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-    repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
-    gap: 20px;
+    background-color: rgba(0,0,0,.5);
+    gap: 30px;
     padding: 50px;
+    
 }
 
 
@@ -46,7 +48,7 @@ body{
     gap: 30px;
     width: 250px;
     height: 150px;
-    box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
+
     background: #fffef0;
     padding: 10px;
     
@@ -83,35 +85,48 @@ body{
     align-items:    center;
     justify-content: center;
     font-size: 40px;
-    color: #F0C386;   
+    color: black;   
     
 
 }
 
 #sidebar{
-
     padding: 20px;
     border-radius: 20px;
-    background-color: hsla(0, 0%, 100%, 0.993);
-    background-image: repeating-linear-gradient(transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-    repeating-linear-gradient(270deg, transparent, transparent 50px, rgba(0,0,0,.4) 50px, rgba(0,0,0,.4) 53px, transparent 53px, transparent 63px, rgba(0,0,0,.4) 63px, rgba(0,0,0,.4) 66px, transparent 66px, transparent 116px, rgba(0,0,0,.5) 116px, rgba(0,0,0,.5) 166px, rgba(255,255,255,.2) 166px, rgba(255,255,255,.2) 169px, rgba(0,0,0,.5) 169px, rgba(0,0,0,.5) 179px, rgba(255,255,255,.2) 179px, rgba(255,255,255,.2) 182px, rgba(0,0,0,.5) 182px, rgba(0,0,0,.5) 232px, transparent 232px),
-    repeating-linear-gradient(125deg, transparent, transparent 2px, rgba(0,0,0,.2) 2px, rgba(0,0,0,.2) 3px, transparent 3px, transparent 5px, rgba(0,0,0,.2) 5px);
+    background-color: #F5F5F5;
+    opacity: 0.8;
+    background-size: 20px 20px;
+    background-color: rgba(0,0,0,.5);
 }
 
 form{
-    background-color: rgba(0,0,0,.5);
+
     border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#F5F5F5;
 }
 
 .form{
     display: flex;
     padding: 20px;
     gap: 50px;
+    align-items: center;
+    justify-content: center   ;
     
 }
 
 input{
     height: 15px;
     border-radius: 20px;
-    border: 0;
+    border: 2px solid white;
+    padding-left: 10px;
+    background-color: rgba(0,0,0,.5);
+    color: #F5F5F5;
+    font-weight: 700;
+}
+
+#submit{
+    height: 50px;
+    width: 100px;
 }
