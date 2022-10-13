@@ -1,5 +1,12 @@
 <!DOCTYPE html>
+
+<!--
+    argyle pattern from - https://projects.verou.me/css3patterns/#argyle
+
+-->
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
@@ -18,7 +25,27 @@
 
     </div>
     <div id="sidebar">
-
+        <div id="sidebar-info">
+            <span>Input Book Details:</span>
+        </div>
+        <form>
+            <div class="form">
+                <label for="book-title">Book Title</label>
+                <input type="text" id="book-title">
+            </div>
+            <div class="form">
+                <label for="book-author">Book Author</label>
+                <input type="text" id="book-author">
+            </div>
+            <div class="form">
+                <label for="book-page">Book Page</label>
+                <input type="text" id="book-page">
+            </div>
+            <div class="form">
+                <label for="book-read">Have you finished the book?</label>
+                <input type="checkbox" id="book-read">
+            </div>
+        </form>
     </div>
   </section>
 </div>
