@@ -18,41 +18,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Library</title>
 </head>
+
 <body>
-<div id="main-container">
-  <section id="header">
-    
-  </section>
-  <section id="wall">
+
+  <div id="header">
+    <span>test</span>
+  </div>
+  <div id="wall">
     <div id="shelf" class="shelves">
 
     </div>
-    <div id="sidebar">
-        <div id="sidebar-info">
-            <span>Input Book Details:</span>
+        <div id="sidebar">
+            <div id="sidebar-info">
+                <span>Input Book Details:</span>
+            </div>
+            <form name="book-form" method="POST" onsubmit="addBook()">
+                <div class="form">
+                    <label for="book-title">Book Title</label>
+                    <input type="text" id="book-title">
+                </div>
+                <div class="form">
+                    <label for="book-author">Book Author</label>
+                    <input type="text" id="book-author">
+                </div>
+                <div class="form">
+                    <label for="book-page">No. of Pages</label>
+                    <input type="number" id="book-page">
+                </div>
+                <div class="form">
+                    <label for="book-read">Have you finished the book?</label>
+                    <input type="checkbox" id="book-read" required>
+                </div>
+                <button type="button" id="submit" required></button>
+            </form>
         </div>
-        <form name="book-form" method="POST" onsubmit="addBook()">
-            <div class="form">
-                <label for="book-title">Book Title</label>
-                <input type="text" id="book-title">
-            </div>
-            <div class="form">
-                <label for="book-author">Book Author</label>
-                <input type="text" id="book-author">
-            </div>
-            <div class="form">
-                <label for="book-page">No. of Pages</label>
-                <input type="number" id="book-page">
-            </div>
-            <div class="form">
-                <label for="book-read">Have you finished the book?</label>
-                <input type="checkbox" id="book-read">
-            </div>
-            <button type="button" id="submit"></button>
-        </form>
     </div>
-  </section>
-</div>
+
 
 
 </body>

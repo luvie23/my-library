@@ -1,26 +1,41 @@
-
+html{
+    font-size: 14px;
+    height: 100%;
+}
 body{
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin:  0;
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    background-color: #6d695c;
   }
 
 
-
 #header{
-    height: 20vh;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
     background-color: bisque;
 }
 
+#header>span{
+    font-size: 5rem;
+}
+
 #wall{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 50px;
     background-color: #6d695c;
     gap: 50px;
-    height: 100%;
-
+    height: fit-content;
+    
+    margin: 0;
 }
 
 #shelf{
@@ -30,6 +45,7 @@ body{
     background-color: rgba(0,0,0,.5);
     gap: 30px;
     padding: 50px;
+    width: 600px;
     
 }
 
@@ -41,14 +57,19 @@ body{
     align-items: center;
     justify-content: flex-end;
     gap: 30px;
-    height: 150px;
+    height: 200px;
     background: #fffef0;
     padding: 10px;
+    font-size: 2rem;
+    overflow: auto;
     
+
+
 }
 
 .cards.true{
     border-left:   10px solid #4ade80;
+    
 }
 
 .cards.false{
@@ -61,7 +82,7 @@ body{
     align-items: flex-end;
     justify-content: flex-end;
     gap: 15px;
-    width: 250px;
+    width: 230px;
 
     
 }
@@ -73,6 +94,12 @@ body{
     height: 20px;
     justify-content: center;
     align-items: center;
+    border:     0;
+}
+
+button[id^='read']{
+    background: rgb(156,214,165);
+background: linear-gradient(90deg, rgba(156,214,165,1) 39%, rgba(214,156,156,1) 50%);
 }
 
 #sidebar-info{
@@ -80,8 +107,9 @@ body{
     height: 250px;
     align-items:    center;
     justify-content: center;
-    font-size: 40px;
-    color: black;   
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: white;   
     
 
 }
@@ -92,15 +120,17 @@ body{
     background-color: #F5F5F5;
     opacity: 0.8;
     background-size: 20px 20px;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.1);
 }
 
 form{
-
+    display: grid;
     border-radius: 20px;
     font-size: 20px;
     font-weight: bold;
     color:#F5F5F5;
+
+    justify-items: end;
 }
 
 .form{
@@ -132,3 +162,9 @@ input::-webkit-inner-spin-button {
     height: 50px;
     width: 100px;
 }
+
+@media only screen and (max-width: 600px) {
+    #wall {
+      width: ;
+    }
+  }
