@@ -18,6 +18,9 @@ function addBookToLibrary(Book){
 }
 
 
+book1 = new Book('test card', 'luvie', 233, true);
+addBookToLibrary(book1);
+
 
 function setupShelf(){
         shelf.innerHTML = "";
@@ -71,7 +74,7 @@ document.getElementById('submit').onclick = function(){
     
 
     if (author == '' || page == '' || title == ''){
-        return alert('please put details')
+        return alert('Please complete the on the fields details')
         
     } else{
         let newBook = new Book(title, author, page, read);
@@ -92,3 +95,5 @@ function toggle(index){
     myLibrary[index].read ? myLibrary[index].read =  false : myLibrary[index].read =  true;
     setupShelf();
 }
+
+setupShelf();
