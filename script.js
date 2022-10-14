@@ -74,7 +74,7 @@ document.getElementById('submit').onclick = function(){
     
 
     if (author == '' || page == '' || title == ''){
-        return alert('Please complete the on the fields details')
+        return alert('Please complete the details')
         
     } else{
         let newBook = new Book(title, author, page, read);

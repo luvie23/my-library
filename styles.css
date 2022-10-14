@@ -71,7 +71,7 @@ body{
     height: 200px;
     background: #F6F7F2;
     padding: 10px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: 'Amatic SC', cursive;
     overflow: auto;
     
@@ -180,3 +180,8 @@ input{
     font-size: 1.5rem;
 }
 
+@media screen and (min-width: 800px) {
+    .cards {
+      font-size: 3rem;
+    }
+  }
