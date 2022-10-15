@@ -18,7 +18,7 @@ function addBookToLibrary(Book){
 }
 
 
-book1 = new Book('test card', 'luvie', 233, true);
+book1 = new Book('Crime and Punishment', 'Fyodor Dostoyevsky', 492, true);
 addBookToLibrary(book1);
 
 

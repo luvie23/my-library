@@ -71,20 +71,21 @@ body{
     height: 200px;
     background: #F6F7F2;
     padding: 10px;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Amatic SC', cursive;
+
     overflow: auto;
     
 
 
 }
 
-.cards.true{
+.true{
     border-left:   13px solid rgba(156,214,165,1);
     
 }
 
-.cards.false{
+.false{
     border-left:   13px solid rgba(254,173,173,1);
 }
 
@@ -180,8 +181,8 @@ input{
     font-size: 1.5rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
     .cards {
-      font-size: 3rem;
+      font-size: 1.5rem;
     }
   }
